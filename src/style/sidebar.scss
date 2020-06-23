@@ -10,6 +10,9 @@
       align-content: center;
       padding: 40px 35px 40px 20px;
       color: #333333;
+      img.logo {
+        margin-right: 5px;
+      }
     }
     &__item {
       position: relative;
@@ -87,8 +90,9 @@
       left: -150px;
       &__logo {
         justify-content: flex-end;
-        .logo {
+        img.logo {
           display: block;
+          margin-right: 0;
         }
         .text-logo {
           display: none;
@@ -107,6 +111,9 @@
         transform: translateX(150px);
         .sidebar__logo {
           justify-content: flex-start;
+          img.logo {
+            margin-right: 5px;
+          }
           .text-logo {
             display: block;
           }
