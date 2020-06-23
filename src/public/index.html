@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Title</title>
+</head>
+<body>
+  <div id="app">
+    <div class="sidebar" id="sidebar">
+      <div class="tag">
+        <img class="tag__background" src="../assets/images/Union.png">
+        <img class="tag__button" id="side-button" src="../assets/icons/menu-burger.svg">
+      </div>
+      <div class="sidebar__logo">
+        <img class="logo" src="../assets/images/logo.svg">
+        <img class="text-logo" src="../assets/images/text-logo.svg">
+      </div>
+      <ul class="sidebar__menu">
+        <li class="sidebar__item active">
+          <div class="item__icon category"><img src="../assets/icons/side-category.svg"></div>
+          <div class="item__text">Каталог</div>
+        </li>
+        <li class="sidebar__item">
+          <div class="item__icon health"><img src="../assets/icons/side-health.svg"></div>
+          <div class="item__text">Здоровье</div>
+        </li>
+        <li class="sidebar__item">
+          <div class="item__icon beatiful"><img src="../assets/icons/side-beatiful.svg"></div>
+          <div class="item__text">Красота</div>
+        </li>
+        <li class="sidebar__item">
+          <div class="item__icon entertainment"><img src="../assets/icons/side-entertainment.svg"></div>
+          <div class="item__text">Развлечения</div>
+        </li>
+        <li class="sidebar__item">
+          <div class="item__icon auto"><img src="../assets/icons/side-auto.svg"></div>
+          <div class="item__text">Авто</div>
+        </li>
+      </ul>
+    </div>
+    <div class="page" id="page">
+      <div class="page__title">Развлечения</div>
+      <div class="page__search" id="search">
+        <label class="search">
+          <div class="search__icon"><img src="../assets/icons/search.svg"></div>
+          <input class="search__input" type="text" placeholder="Какой магазин вам нужен?">
+        </label>
+      </div>
+      <div class="page__body" id="coupon-list">
+        <div  data-template="coupon" class="wrapper-coupon column">
+          <div class="coupon">
+            <div class="coupon-text">
+              <div>
+                <div class="coupon-text__title"></div>
+                <div class="coupon-text__description"></div>
+              </div>
+              <div>
+                <div class="coupon-text__code"></div>
+                <div class="coupon-text__code-type"></div>
+              </div>
+            </div>
+            <img class="coupon__image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
