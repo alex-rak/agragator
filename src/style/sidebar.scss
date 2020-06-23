@@ -5,6 +5,7 @@
     background: #F3F4F9;
     z-index:9999;
     transition: 0.4s;
+    padding-left: 20px;
     &__logo {
       display: flex;
       align-content: center;
@@ -88,6 +89,7 @@
       position: fixed;
       width: 250px;
       left: -150px;
+      padding-left: 10px;
       &__logo {
         justify-content: flex-end;
         img.logo {
