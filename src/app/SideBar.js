@@ -59,6 +59,7 @@ export default class Agregator extends MainClass {
           this.$.getElementsByClassName("sidebar__item")[i].classList.remove("active");
         }
         e.currentTarget.classList.add("active")
+        this.$.getElementsByClassName("page__title")[0].textContent = e.currentTarget.textContent
       })
     }
   }
