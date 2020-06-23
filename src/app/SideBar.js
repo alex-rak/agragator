@@ -64,10 +64,6 @@ export default class Agregator extends MainClass {
     }
   }
 
-  setColorSvg() {
-
-  }
-
   /**
    * Меняем кнопку открытия и скрытия SideBar
    * @param {Boolean} open открываем или скрываем SideBar
