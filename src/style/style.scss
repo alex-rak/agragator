@@ -7,12 +7,6 @@
   font-family: $main-font;
   font-weight: 900;
 }
-.column {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-basis: 33.3%;
-}
 #app {
   display: flex;
   min-height: 100vh;
@@ -76,14 +70,16 @@
       flex-wrap: wrap;
       justify-content: flex-start;
       background-color: #ffffff;
-      [data-template] {
-        display: none;
-      }
+      margin: 0 10px;
       .coupon {
+        &[data-template] {
+          display: none;
+        }
         position: relative;
         display: flex;
         justify-content: space-between;
-        width: 90%;
+        width: calc(33.3% - 20px);
+        margin: 0 10px;
         min-height: 130px;
         border-radius: 10px;
         box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
@@ -172,9 +168,6 @@
   * {
     font-weight: 700;
   }
-  .column {
-    flex-basis: 50%;
-  }
   #app {
     .page {
       margin-left: 100px;
@@ -188,6 +181,11 @@
           padding-left: 180px;
         }
       }
+      &__body {
+        .coupon {
+          width: calc(50% - 20px);
+        }
+      }
     }
   }
 }
@@ -195,8 +193,8 @@
   * {
     font-weight: 300;
   }
-  .column {
-    flex-basis: 100%;
+  .coupon {
+    width: calc(100% - 20px);
   }
   #app {
     .page {
@@ -212,6 +210,11 @@
               display: none;
             }
           }
+        }
+      }
+      &__body {
+        .coupon {
+          width: calc(100% - 20px);
         }
       }
     }
